@@ -139,3 +139,19 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID = 1
+
+#528286425524-1pd8g4a897be32e5ket3o7f8p5lan9us.apps.googleusercontent.com
+#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
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
+    }
+}
