@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-#     'allauth.socialaccount.providers.github',
-#     'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.facebook',
     'crispy_forms',
  ]
 
@@ -162,3 +162,5 @@ LOGIN_REDIRECT_URL = 'home'
 LOGIN_REDIRECT_URL = 'login'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CRISPY_TEMPLATE_PACK = 'uni_form'
